@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#shopbtn").mouseenter(function(){
+                alert("Get 15% discount when you shop with us");
+                // document.write("get 15% discount when you first shop with us");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header> 
+        <center>
+            <h1>MyCars Limited</h1>
+            <span class="motto">You need it, We've got it!</span>
+        </center>
+    </header>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="margin-bottom: 5px;">
+        <!-- button used as a toggler when the navbar shrinks in small devices -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navigation links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="navbar-nav">
+                <ul class="navbar-nav">
+                    <!-- link for 'Home' -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a> <!--Home link-->
+                    </li>
+                    <!-- link for 'Shop' -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html" id="shopbtn">Shop</a> <!--Shop link-->
+                    </li>
+                    <!-- link for 'Sign Up' -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Sign Up</a> <!--Sign up link-->
+                    </li>
+                    <!-- link for 'Sign In' -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign In</a> <!--Sign in link-->
+                    </li>
+                    <!-- link for 'Help' -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Help</a> <!--Help link-->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">FAQ</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                        </div>
+                    </li>
+                    <!-- link for 'Testimonials' -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimony" >Testimonials</a> <!--Testimonials link-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- images slider section -->
+    <div id="demo" class="carousel slide carouseldiv" data-ride="carousel">
+        
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="myimages/2018_lexus.jpg" alt="Los Angeles" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="myimages/2020_prado.jpg" alt="Chicago" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="myimages/2020_toureg.jpg" alt="New York" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="myimages/escalade.jpg" alt="New York" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="myimages/2019_gclassbenz.jpg" alt="New York" style="width: 100%; height: 500px;">
+            </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" style="background-color: black;"></span>
+        </a>
+        
+    </div>
+    <!-- testimonials section -->
+    <div class="container-fluid" style="margin: top 5px;">
+        <table class="table table-dark table-bordered" id="testimony">
+            <tr>
+                <!-- first testimonial -->
+                <td >
+                    <p>
+                        <i>" MyCars Ltd has been the best site I have ever visited. Their products are of good quality
+                            and the best value. "
+                        </i> ~ <b>Omondi Timon </b>
+                    </p>
+                </td>
+                <!-- second testimonial -->
+                <td >
+                    <p>
+                        <i> " This has been the best site I have visited ever. Value for your money indeed! There's 
+                            also good customer service. Excellent! " 
+                        </i>~ <b>Brian Odongo </b>
+                    </p>
+                </td>
+                <!-- third testimonial -->
+                <td >
+                    <p>
+                        <i>" I love everything about this company, from good customer service to the quality of the products
+                            timely delivery and affordable rates for the spare parts. "
+                        </i> ~ <b>Kenneth Copeland </b>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

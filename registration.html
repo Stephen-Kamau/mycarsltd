@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class=" signpages container-fluid"><!--container of the whole page-->
+        <div class="position"><!--this div is used to add style. Refer to class 'position' on landing.css file-->
+            <div class="header">
+                <h2 >Sign Up</h2>
+            </div>
+            <div>
+                <!-- registration form -->
+                <form action="register.php" method="POST"> 
+                    <label for="">Username</label> <br>
+                    <input type="text" name="username"> <br>
+                    <label for="">Email</label> <br>
+                    <input type="text" name="email"> <br>
+                    <label for="">Date of Birth</label><br>
+                    <input type="date" name="dob"><br>
+                    <label for="">Postal address</label><br>
+                    <input type="text" name="p_Address"><br>
+                    <label for="">Password</label><br>
+                    <input type="password" name="password"><br>
+                    <label for="">Confirm Password</label><br>
+                    <input type="password" name="c_password"><br> <br>
+                    <button type="submit" class="btn btn-primary">Sign Up</button> <br>
+                    <label for="">Already have an Account? </label> <a href="login.html"> Sign In</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

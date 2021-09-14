@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+label{
+    font-weight: bold;
+}
+button{
+    border: none;
+}
+header{
+    margin-top: 20px;
+}
+h1{
+    font-family: sans-serif;
+    color: orange;
+}
+.motto{
+    font-family: cursive;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+table{
+    margin-top: 5px;
+}
+.header{
+    margin-bottom: 20px;
+}
+.position{
+    padding-left: 10px;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 50px;
+    background-color: rgb(236, 214, 255);
+}
+.carouseldiv {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* width: 80%; */
+  }
