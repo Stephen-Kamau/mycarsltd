@@ -11,11 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#shopbtn").mouseenter(function(){
-                alert("Get 15% discount when you shop with us");
-                // document.write("get 15% discount when you first shop with us");
-            });
+         $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 </head>
@@ -42,7 +39,7 @@
                     </li>
                     <!-- link for 'Shop' -->
                     <li class="nav-item">
-                        <a class="nav-link" href="catalog.html" id="shopbtn">Shop</a> <!--Shop link-->
+                        <a class="nav-link" href="catalog.html" data-toggle="tooltip" title="Get 15% off when you shop with us">Shop</a> <!--Shop link-->
                     </li>
                     <!-- link for 'Sign Up' -->
                     <li class="nav-item">
