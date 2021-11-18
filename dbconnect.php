@@ -2,9 +2,9 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$db = "mycarsltd";
+// $db = "mycarsltd";
 // creating a connection to the server
-$connect =mysqli_connect($server,$username,$password,$db);
+$connect =mysqli_connect($server,$username,$password);
 
 if($connect){
     echo "Connected succesfully!";
@@ -12,15 +12,15 @@ if($connect){
 else{
     die("Not succesfully connected ".mysqli_connect_error());
 }
-// creating a database named mycarsltd
-/*$query = "CREATE DATABASE mycarsltd";
+creating a database named mycarsltd
+query = "CREATE DATABASE mycarsltd";
 $result = mysqli_query($connect,$query);
 if($result){
     echo "Database created succesfully ";
 }
 else{
     echo " <br/>Database not created :".mysqli_error($connect);
-}*/
+}
 // creating a table to store details of users
 // $query= "CREATE TABLE users (
     //     id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -47,6 +47,4 @@ else{
             // else{
             //     echo "<br/>Table not modified ".mysqli_error($connect);
             // }
-
-            
 ?>
