@@ -13,35 +13,51 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md bg-dark fixed-top"  style="margin-bottom: 5px;">
         <div class="navbar-brand" id="home" style="color: orange;">MyCars Ltd</div><!--name of the company-->
         <!-- button used as a toggler when the navbar shrinks in small devices -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- navigation links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <!-- link for 'Home' -->
+            <!-- link for 'Home' -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a> <!--Home link-->
+                    <a class="nav-link" href="landing.html">Home</a>
                 </li>
+            <!-- link for 'model S' -->
+                <li class="nav-item">
+                  	<a class="nav-link" href="">Model S</a> 
+              	</li>
+            <!-- link for 'model X' -->
+                <li class="nav-item">
+                	<a class="nav-link" href="">Model X </a>
+              	</li>
+			<!-- link for 'model 3' -->
+              	<li class="nav-item">
+               		<a class="nav-link" href="">Model 3</a> 
+            	</li>
+            <!-- link for 'parts' -->
+            	<li class="nav-item">
+              		<a class="nav-link" href="">Parts</a> 	
+          </li>
                 <!-- Link for 'Account' that has a dropdown to choose from -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Account</a>
                     <div class="dropdown-menu">
                         <!-- <a class="dropdown-item" href="login.html">Sign In</a> -->
-                        <a class="dropdown-item" href="#">Sign Out</a>
-                        <a class="dropdown-item" href="userdetails.php">View details</a>
-                        <a class="dropdown-item" href="#">Change Password</a>
+                        <a class="dropdown-item" href="#"><b>Sign Out</b></a>
+                        <a class="dropdown-item" href="userdetails.php"><b>View details</b></a>
+                        <a class="dropdown-item" href="#"><b>Change Password</b></a>
                     </div>
                 </li>
                 <!-- link for 'help ' that has a drop down to choose from -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Help</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">FAQ</a>
-                        <a class="dropdown-item" href="contactUs.html">Contact Us</a>
+                        <a class="dropdown-item" href="#"><b>FAQ</a>
+                        <a class="dropdown-item" href="contactUs.html"><b>Contact Us</b></a>
                     </div> 
                 </li>   
                 <!-- link for the Cart -->
@@ -52,242 +68,20 @@
         </div>  
     </nav>
     <!-- container of products -->
-    <div class="container-fluid" style="margin-top:60px">
-        <!-- Products available for sale -->
-        <!-- <h3>Featured products</h3> -->
-        <table class="table table-bordered">
-            <tr> <!--first row of products-->
-                <!-- 1st item,row 1 -->
-              <td>
-                <img src="myimages/2018_lexus.jpg" alt="img1">
-                <h6>Lexus LX 570 2020</h6> <!--name of product-->
-                <!-- rating stars -->
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>KShs 22.0M</p> <!--price of the product-->
-                <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-              </td> 
-                <!-- 2nd item, row 1 -->
-              <td>
-                <img src="myimages/2021_GClass.jpg" alt="img1">
-                <h6>Merc G-Class 2020</h6> <!--name of product-->
-                <!-- rating stars -->
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>KShs 29.0M</p> <!--price of the product-->
-                <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-              </td>
-              <!-- 3rd item, row 1 -->
-              <td>
-                <img src="myimages/2020_defender.png" alt="img1">
-                <h6>Defender 2020</h6> <!--name of product-->
-                <!-- rating stars -->
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>KShs 24.0M</p> <!--price of the product-->
-                <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-              </td>
-              <!-- 4th item, row 1 -->
-              <td>
-                <img src="myimages/2020_discovery.jpg" alt="img1">
-                <h6>Discovery 2020</h6> <!--name of product-->
-                <!-- rating stars -->
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>KShs 22.0M</p> <!--price of the product-->
-                <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-              </td>
-              <!-- 5th item, row 1 -->
-              <td>
-                <img src="myimages/2020_glc.jpg" alt="img1">
-                <h6>Merc GLC 2020</h6> <!--name of product-->
-                <!-- rating stars -->
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>KShs 19.0M</p> <!--price of the product-->
-                <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-              </td>
-            </tr>
-            <tr> <!--2nd row of products-->
-                <!-- 1st item, row 2 -->
-                <td>
-                  <img src="myimages/2020_infiniti.jpg" alt="img1">
-                  <h6>Infiniti 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 13.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td> 
-                  <!-- 2nd item, row 2 -->
-                <td>
-                  <img src="myimages/2020_prado.jpg" alt="img1">
-                  <h6>Prado 2019</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 8.5M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 3rd item, row 2 -->
-                <td>
-                  <img src="myimages/2020_range_vellar.jpg" alt="img1">
-                  <h6>Range Rover Vellar 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 22.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 4th item, row 2 -->
-                <td>
-                  <img src="myimages/vwtoureg.jpg" alt="img1">
-                  <h6>VW Toureg 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 11.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 5th item, row 2 -->
-                <td>
-                  <img src="myimages/2020_x5.jpg" alt="img1">
-                  <h6>BMW X5 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 14.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-              </tr>
-              <tr> <!--3rd row of products-->
-                <!-- 1st item, row 3 -->
-                <td>
-                  <img src="myimages/2020_bmwx6.webp" alt="img1">
-                  <h6>BMW X6 2019</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 17.5M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td> 
-                  <!-- 2nd item, row 3 -->
-                <td>
-                  <img src="myimages/AudiQ7.jpg" alt="img1">
-                  <h6>Audi Q7 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 16.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 3rd item, row 3 -->
-                <td>
-                  <img src="myimages/escalade.jpg" alt="img1">
-                  <h6>Cadillac Escalade 2018</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 18.9M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 4th item, row 3 -->
-                <td>
-                  <img src="myimages/Hyundai.jpg" alt="img1">
-                  <h6>Hyundai Palisade 2021</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 16.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-                <!-- 5th item, row 3 -->
-                <td>
-                  <img src="myimages/volvo_xc90.jpg" alt="img1">
-                  <h6>Volvo xc90 2020</h6> <!--name of product-->
-                  <!-- rating stars -->
-                  <div class="rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                  </div>
-                  <p>KShs 15.0M</p> <!--price of the product-->
-                  <button class="btns">ADD TO CART</button> <!--button that adds the product to Cart-->
-                </td>
-              </tr>
-        </table>
-    </div>
+	<div class="container-fluid" style="padding-top: 60px;">
+
+		<!-- div for model  S-->
+		<div>
+			<h4>Model S</h4>
+		</div>
+		<!-- div for model  X-->
+		<div>
+			<h4>model X</h4>
+		</div>
+		<!-- div for model  3-->
+		<div>
+			<h4>Model 3</h4>
+		</div>
+	</div>
 </body>
 </html>
