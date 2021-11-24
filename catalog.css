@@ -6,6 +6,7 @@ img{
     /* max-width: 100%; */
     height: 250px;
     max-height: auto;
+    padding: 5px;
 }
 #cart{
     width: 24px;
@@ -27,4 +28,12 @@ button:hover{
 }
 .catalog_sliders{
     width: 35%;
+}
+.row1{
+    float: left;
+    width: 25%;
+}
+.row2{
+    float: left;
+    width: 25%;
 }
