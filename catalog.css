@@ -2,18 +2,14 @@
     box-sizing: border-box;
 }
 img{
-    max-width: 100%;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 250px;
     max-height: auto;
 }
 #cart{
     width: 24px;
     height: 20px;
-}
-p{
-    font-family: cursive;
-    color: orange; 
-    font-size: 13px;
-    font-style: oblique;
 }
 h6{
     color: orange;
@@ -28,4 +24,7 @@ button{
 }
 button:hover{
     background-color: black;
+}
+.catalog_sliders{
+    width: 35%;
 }

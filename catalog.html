@@ -1,118 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="catalog.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="catalog.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-md bg-dark fixed-top"  style="margin-bottom: 5px;">
-        <div class="navbar-brand" id="home" style="color: orange;">MyCars Ltd</div><!--name of the company-->
-        <!-- button used as a toggler when the navbar shrinks in small devices -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- navigation links -->
-        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-            <!-- link for 'Home' -->
-                <li class="nav-item">
-                    <a class="nav-link" href="landing.html">Home</a>
-                </li>
-            <!-- link for 'model S' -->
-                <li class="nav-item">
-                  	<a class="nav-link" href="">Model S</a> 
-              	</li>
-            <!-- link for 'model X' -->
-                <li class="nav-item">
-                	<a class="nav-link" href="">Model X </a>
-              	</li>
-			<!-- link for 'model 3' -->
-              	<li class="nav-item">
-               		<a class="nav-link" href="">Model 3</a> 
-            	</li>
-            <!-- link for 'parts' -->
-            	<li class="nav-item">
-              		<a class="nav-link" href="">Parts</a> 	
-          </li>
-                <!-- Link for 'Account' that has a dropdown to choose from -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Account</a>
-                    <div class="dropdown-menu">
-                        <!-- <a class="dropdown-item" href="login.html">Sign In</a> -->
-                        <a class="dropdown-item" href="#"><b>Sign Out</b></a>
-                        <a class="dropdown-item" href="userdetails.php"><b>View details</b></a>
-                        <a class="dropdown-item" href="#"><b>Change Password</b></a>
-                    </div>
-                </li>
-                <!-- link for 'help ' that has a drop down to choose from -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Help</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"><b>FAQ</b></a>
-                        <a class="dropdown-item" href="contactUs.html"><b>Contact Us</b></a>
-                    </div> 
-                </li>   
-                <!-- link for the Cart -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img id="cart" src="myimages/cart.png" alt="Cart"> Cart</a>
-                </li>  
-            </ul>
-        </div>  
-    </nav>
-    <!-- container of products -->
-	<div class="container-fluid" style="padding-top: 60px;">
-
-		<!-- div for model  S-->
-		<div>
-			<h4>Model S</h4>
-				<div id="demo" class="carousel slide" data-ride="carousel" style="float: left;margin-right: 5px; width: 40%;">
-
-					<!-- Indicators -->
-					<ul class="carousel-indicators">
-					  <li data-target="#demo" data-slide-to="0" class="active"></li>
-					  <li data-target="#demo" data-slide-to="1"></li>
-					  <li data-target="#demo" data-slide-to="2"></li>
-					  <li data-target="#demo" data-slide-to="3"></li>
-					</ul>
-				  
-					<!-- The slideshow -->
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img src="teslas/modelS/image2.jpg" alt="Los Angeles">
-					  </div>
-					  <div class="carousel-item">
-						<img src="teslas/modelS/image3.jpg" alt="Chicago">
-					  </div>
-					  <div class="carousel-item">
-						<img src="teslas/modelS/image5.jpg" alt="New York">
-					  </div>
-					  <div class="carousel-item">
-						<img src="teslas/modelS/image6.jpg" alt="New York">
-					  </div>
+	<!-- navigation bar -->
+	<nav class="navbar navbar-expand-md bg-dark fixed-top"  style="margin-bottom: 5px;">
+		<div class="navbar-brand" id="home" style="color: orange;">MyCars Ltd</div><!--name of the company-->
+		<!-- button used as a toggler when the navbar shrinks in small devices -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- navigation links -->
+		<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<!-- link for 'Home' -->
+				<li class="nav-item">
+					<a class="nav-link" href="landing.html">Home</a>
+				</li>
+				<!-- link for 'model S' -->
+				<li class="nav-item">
+					<a class="nav-link" href="#modelS">Model S</a> 
+				</li>
+				<!-- link for 'model X' -->
+				<li class="nav-item">
+					<a class="nav-link" href="#modelX">Model X </a>
+				</li>
+				<!-- link for 'model 3' -->
+				<li class="nav-item">
+					<a class="nav-link" href="#model3">Model 3</a> 
+				</li>
+				<!-- link for 'parts' -->
+				<li class="nav-item">
+					<a class="nav-link" href="parts.html">Parts</a> 	
+				</li>
+				<!-- Link for 'Account' that has a dropdown to choose from -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Account</a>
+					<div class="dropdown-menu">
+						<!-- <a class="dropdown-item" href="login.html">Sign In</a> -->
+						<a class="dropdown-item" href="#"><b>Sign Out</b></a>
+						<a class="dropdown-item" href="userdetails.php"><b>View details</b></a>
+						<a class="dropdown-item" href="#"><b>Change Password</b></a>
 					</div>
-				  
-					<!-- Left and right controls -->
-					<a class="carousel-control-prev" href="#demo" data-slide="prev">
-					  <span class="carousel-control-prev-icon"></span>
-					</a>
-					<a class="carousel-control-next" href="#demo" data-slide="next">
-					  <span class="carousel-control-next-icon"></span>
-					</a>
-				  </div>
-			<div >
-				<h4 style="text-align: center;">FEATURES</h4>
-			</div>
+				</li>
+				<!-- link for 'help ' that has a drop down to choose from -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Help</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#"><b>FAQ</b></a>
+						<a class="dropdown-item" href="contactUs.html"><b>Contact Us</b></a>
+					</div> 
+				</li>   
+				<!-- link for the Cart -->
+				<li class="nav-item">
+					<a class="nav-link" href="#"><img id="cart" src="myimages/cart.png" alt="Cart"> Cart</a>
+				</li>  
+			</ul>
+		</div>  
+	</nav>
+	<!-- container of products -->
+	<div class="container-fluid" style="padding-top: 60px;width: 100%;">
+		<!-- model S -->
+		<div id="modelS"><h4>Model S</h4></div>
+		<div style="float: right; width: 60%;">
+			<!-- <center><h5><b>FEATURES</b></h5></center> -->
+			<table class="table">
+				<tr>
+					<td>Year of manufacture: </td><td>2017</td>
+				</tr>
+				<tr>
+					<td>Model Number: </td><td>SAX345D</td>
+				</tr>
+				<tr>
+					<td>Price (Kshs): </td><td><span>16,000,000</span></td>
+				</tr>
+				<tr>
+					<td>Reservation Price (Kshs): </td><td><span>14,500</span></td>
+				</tr>
+				<tr>
+					<center><td colspan="2"><button>Reserve Unit</button></td><td></td></center>
+				</tr>
+			</table>
 		</div>
-		<div >
-			model X should be here
+		<div id="demo" class="carousel slide catalog_sliders" data-ride="carousel">
+			
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="teslas/modelS/image1 (2).jpg" alt="model s">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/modelS/image2.jpg" alt="model s">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/modelS/image3.jpg" alt="model s">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		<!-- model X -->
+		<div id="modelX"><h4>Model X</h4></div>
+		<div style="float: right; width: 60%;">
+			<!-- <center><h5><b>FEATURES</b></h5></center> -->
+			<table class="table">
+				<tr>
+					<td>Year of manufacture: </td><td>2017</td>
+				</tr>
+				<tr>
+					<td>Model Number: </td><td>XUD345D</td>
+				</tr>
+				<tr>
+					<td>Price (Kshs): </td><td><span>18,000,000</span></td>
+				</tr>
+				<tr>
+					<td>Reservation Price (Kshs): </td><td><span>15,500</span></td>
+				</tr>
+				<tr>
+					<center><td colspan="2"><button>Reserve Unit</button></td><td></td></center>
+				</tr>
+			</table>
+		</div>
+		<div id="demoX" class="carousel slide catalog_sliders" data-ride="carousel">
+			
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="teslas/modelX/image2 (2).jpg" alt="model x">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/modelX/image3 (2).jpg" alt="model x">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/modelX/image4 (2).jpg" alt="model x">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demoX" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demoX" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		<!-- model 3 -->
+		<div id="model3"><h4>Model 3</h4></div>
+		<div style="float: right; width: 60%;">
+			<!-- <center><h5><b>FEATURES</b></h5></center> -->
+			<table class="table">
+				<tr>
+					<td>Year of manufacture: </td><td>2017</td>
+				</tr>
+				<tr>
+					<td>Model Number: </td><td>3FGH23X</td>
+				</tr>
+				<tr>
+					<td>Price (Kshs): </td><td><span>17,000,000</span></td>
+				</tr>
+				<tr>
+					<td>Reservation Price (Kshs): </td><td><span>15,500</span></td>
+				</tr>
+				<tr>
+					<center><td colspan="2"><button>Reserve Unit</button></td><td></td></center>
+				</tr>
+			</table>
+		</div>
+		<div id="demo3" class="carousel slide catalog_sliders" data-ride="carousel">
+			
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="teslas/model3/image1.jpg" alt="model x">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/model3/image2.jpg" alt="model x">
+				</div>
+				<div class="carousel-item">
+					<img src="teslas/model3/image3.jpg" alt="model x">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo3" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo3" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
 		</div>
 	</div>
 </body>
