@@ -14,7 +14,7 @@ button{
 header{
     margin-top: 20px;
 }
-h1{
+h3{
     font-family: sans-serif;
     color: orange;
 }
@@ -38,8 +38,21 @@ table{
     background-color: rgb(236, 214, 255);
 }
 .carouseldiv {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     position: relative;
     margin: auto;
     /* width: 80%; */
   }
+.footer-div{
+    float: left;
+    width: 25%;
+    /* border: 3px solid  black; */
+}
+.footer-div > p{
+    font-weight: bold;
+}
+footer{
+    /* padding-left: 6%; */
+    /* padding-right: 6%; */
+    background-color: black;
+}
