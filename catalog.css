@@ -37,3 +37,6 @@ button:hover{
     float: left;
     width: 25%;
 }
+li span{
+    color: red;
+}
