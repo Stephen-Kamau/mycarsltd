@@ -2,19 +2,19 @@ let carts = document.querySelectorAll(".addToCart");//selecting all add to cart 
 
 let products = [ //array of product objects
     {
-        name : "model S",
+        name : "Model S",
         tag : "models",
         price : 14500, 
         incart : 0 //no of items in cart
     },
     {
-        name : "model X",
+        name : "Model X",
         tag : "modelx",
         price : 15500,
         incart : 0
     },
     {
-        name : "model 3",
+        name : "Model 3",
         tag : "model3",
         price : 15500,
         incart : 0
@@ -118,11 +118,11 @@ function setItems(product){
             [product.tag] :product
         }
     }
-    localStorage.setItem ("productsInCart" , JSON.stringify(cartItems));
+    localStorage.setItem ("productsInCart" , JSON.stringify(cartItems));//conv't to json string file
 }
 //fxn to calacualte the total price of items in the cart
 function totalPrice(product){ //takes a parameter
-    let totalCartPrice = localStorage.getItem('totalPrice');//assigning the value to a variable
+    let totalCartPrice = localStorage.getItem('totalPrice');
     if(totalCartPrice ==null){ //if total price is not defined i.e not item has been clicked
         localStorage.setItem ("totalPrice",product.price);//setting total price to local storage
     }
@@ -131,4 +131,48 @@ function totalPrice(product){ //takes a parameter
         localStorage.setItem("totalPrice", totalCartPrice+product.price);//increment totalprice by value of new clicked item
     }
 }
-onLoadCartNumber();
+// functions dsplays items selected in the cart
+function displayItemsInCart(){
+    let itemsInCart = localStorage.getItem("productsInCart");
+    let totalCartPrice = localStorage.getItem('totalPrice');
+    itemsInCart= JSON.parse(itemsInCart); //conv't from JSON to javascript
+    //getting the products element from the cart.html file
+    let productscontainer = document.querySelector(".products");
+    
+    // this block will only run if there are itemsInCart and the products container exist(only in the cart page)
+    if(itemsInCart && productscontainer){
+        productscontainer.innerHTML = "";//it will be empty first time page loads
+        Object.values(itemsInCart).map(item =>{
+            productscontainer.innerHTML +=`
+            <div class="product">
+                <ion-icon name="close-circle"></ion-icon>
+                <!--<img src="./images/${item.tag}.jpg">-->
+                <span>  Tesla ${item.name} </span> 
+            </div>
+            <div class="price">Kshs.${item.price}.00</div>
+            <div class= "quantity"> 
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+            <span>${item.incart} </span>
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </div>
+            <div class="total">
+            Kshs.${item.incart * item.price}.00
+            </div>
+            `
+        });
+
+        productscontainer.innerHTML +=`
+        <div class = "basketTotalContainer">
+        <h4 class= "basketTotalTitle">
+        <span>Basket Total</span>
+        </h4>
+        <h4 class="basketTotal">
+        <span>Kshs. ${totalCartPrice}.00</span>
+        </h4>
+        `
+    }
+
+}
+//runs when the page loads straight away
+onLoadCartNumber(); 
+displayItemsInCart();
