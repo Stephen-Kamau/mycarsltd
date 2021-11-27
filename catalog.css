@@ -40,3 +40,36 @@ button:hover{
 li span{
     color: red;
 }
+
+/*cart page */
+.products-container{
+    justify-content: space-around;
+    border: 2px solid black;
+    padding-left: 5px;
+}
+.products-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 3px solid lightgrey;
+}
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+}
+.quantity{
+    width: 30%;
+}
+.total{
+    width: 10%;
+}
+.products{
+    width: 45%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid lightgrey;
+}
