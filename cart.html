@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping cart</title>
-    <link rel="stylesheet" href="catalog.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping cart</title>
+	<link rel="stylesheet" href="catalog.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-dark fixed-top"  style="margin-bottom: 5px;">
+	<nav class="navbar navbar-expand-md bg-dark fixed-top"  style="margin-bottom: 5px;">
 		<div class="navbar-brand" id="home" style="color: orange;">MyCars Ltd</div><!--name of the company-->
 		<!-- button used as a toggler when the navbar shrinks in small devices -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -25,21 +25,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="landing.html">Home</a>
 				</li>
-				<!-- link for 'model S' -->
+				<!-- link for 'products available' -->
 				<li class="nav-item">
-					<a class="nav-link" href="#modelS">Model S</a> 
-				</li>
-				<!-- link for 'model X' -->
-				<li class="nav-item">
-					<a class="nav-link" href="#modelX">Model X </a>
-				</li>
-				<!-- link for 'model 3' -->
-				<li class="nav-item">
-					<a class="nav-link" href="#model3">Model 3</a> 
-				</li>
-				<!-- link for 'parts' -->
-				<li class="nav-item">
-					<a class="nav-link" href="parts.html">Parts</a> 	
+					<a class="nav-link" href="catalog.html">Products</a> 
 				</li>
 				<!-- Link for 'Account' that has a dropdown to choose from -->
 				<li class="nav-item dropdown">
@@ -61,10 +49,25 @@
 				</li>   
 				<!-- link for the Cart -->
 				<li class="nav-item">
-					<a class="nav-link" href="#"><img id="cart" src="myimages/cart.png" alt="Cart"> Cart <span>0</span></a>
+					<a class="nav-link" href="#"><img id="cart" src="myimages/cart.png" alt="Cart"><span>0</span>Cart </a>
 				</li>  
 			</ul>
 		</div>  
 	</nav>
+	<!-- container with the products in cart -->
+	<div class="container-fluid " style="padding-top: 55px">
+		<div class="products-container" style="max-width: 700px; margin:auto; margin-top: 50px;">
+			<div class="products-header" >
+				<h5 class="product-title">PRODUCT</h5>
+				<h5 class="price">PRICE</h5>
+				<h5 class="quantity">QUANTITY</h5>
+				<h5 class="total">TOTAL</h5>
+			</div>
+			<div class="products">
+				products
+			</div>
+		</div>
+	</div>
+	<script src="addtocart.js"></script>
 </body>
 </html>
