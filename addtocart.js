@@ -34,37 +34,37 @@ let products = [ //array of product objects
     {
         name : "Air Filter",
         tag : "airfilter",
-        price : 15000,
+        price : 25500,
         incart : 0
     },
     {
         name : "Pedal Set",
         tag : "pedalset",
-        price : 15000,
+        price : 37500,
         incart : 0
     },
     {
         name : "Rear Trunk Liner",
         tag : "reartrunkliner",
-        price : 15000,
+        price : 56000,
         incart : 0
     },
     {
         name : "Roof Rack",
         tag : "roofrack",
-        price : 15000,
+        price : 17500,
         incart : 0
     },
     {
         name : "Spoiler",
         tag : "spoiler",
-        price : 15000,
+        price : 66900,
         incart : 0
     },
     {
         name : "Mud Flaps",
         tag : "mudflaps",
-        price : 15000,
+        price : 10500,
         incart : 0
     }
 ];
@@ -72,10 +72,11 @@ let products = [ //array of product objects
 for(let i=0 ; i < carts.length; i++){
     carts[i].addEventListener('click' , () =>{ //add to cart when its clicked
         cartNumbers(products[i]); //captures a specific product from the objects of products above 
+        totalPrice(products[i]);
     })
 }
 // fxn to add cart number when product is clicked
-function cartNumbers(product){ //fxn takes one parameter
+function cartNumbers(product){ //fxn takes a parameter
     let productNumbers= localStorage.getItem('cartNumbers');
     productNumbers=parseInt(productNumbers);
 
@@ -87,7 +88,7 @@ function cartNumbers(product){ //fxn takes one parameter
         localStorage.setItem('cartNumbers', 1);
         document.querySelector("a span").textContent = 1;
     }
-    setItems(product);
+    setItems(product); //calling the function setIems
 }
 //fxn ensures cart number is not lost when we reload page
 function onLoadCartNumber(){
@@ -119,5 +120,15 @@ function setItems(product){
     }
     localStorage.setItem ("productsInCart" , JSON.stringify(cartItems));
 }
-
+//fxn to calacualte the total price of items in the cart
+function totalPrice(product){ //takes a parameter
+    let totalCartPrice = localStorage.getItem('totalPrice');//assigning the value to a variable
+    if(totalCartPrice ==null){ //if total price is not defined i.e not item has been clicked
+        localStorage.setItem ("totalPrice",product.price);//setting total price to local storage
+    }
+    else{//if an we have a value of total price in local storage i.e item has been clicked
+        totalCartPrice=parseFloat(totalCartPrice);
+        localStorage.setItem("totalPrice", totalCartPrice+product.price);//increment totalprice by value of new clicked item
+    }
+}
 onLoadCartNumber();
