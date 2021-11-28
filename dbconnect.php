@@ -23,21 +23,32 @@ else{
     echo "DB not created ".mysqli_error($con);
 }*/
 // creating a tables
-$query = "CREATE TABLE feedback (
-    -- productId INT (4) AUTO_INCREMENT PRIMARY KEY,
-    -- email VARCHAR (250) NOT NULL,
-    -- feedbackMsg VARCHAR (250)) ;
-    -- username VARCHAR (50) NOT NULL,
-    -- email VARCHAR (50) NOT NULL,
-    -- p_address VARCHAR (50) NOT NULL,
-    -- pasword VARCHAR (20),
-    -- dob DATE NOT NULL)";
+// $query = "CREATE TABLE feedback (
 
+    // -- productId INT (4) AUTO_INCREMENT PRIMARY KEY,
+    // -- email VARCHAR (250) NOT NULL,
+    // -- feedbackMsg VARCHAR (250)) ;
+    // -- username VARCHAR (50) NOT NULL,
+    // -- email VARCHAR (50) NOT NULL,
+    // -- p_address VARCHAR (50) NOT NULL,
+    // -- pasword VARCHAR (20),
+    // -- dob DATE NOT NULL)";
+
+    // -- $result= mysqli_query($con,$query);
+    // -- if ($result){
+    // --     echo "Table created succesfully <br>";
+    // -- }
+    // -- else{
+    // --     echo "Table not created ".mysqli_error($con);
+    // -- }
+    //altering a table
+    $query= "ALTER TABLE feedback 
+            ADD (userName VARCHAR (100),
+                userPhoneNumber VARCHAR (100))";
     $result= mysqli_query($con,$query);
-    if ($result){
-        echo "Table created succesfully <br>";
-    }
-    else{
-        echo "Table not created ".mysqli_error($con);
+    if($result){
+        echo "table alterd succcesfully <br>";
+    }else{
+        echo "Error! ".mysqli_error($con);
     }
 ?>
