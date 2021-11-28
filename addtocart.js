@@ -138,19 +138,19 @@ function displayItemsInCart(){
     itemsInCart= JSON.parse(itemsInCart); //conv't from JSON to javascript
     //getting the products element from the cart.html file
     let productscontainer = document.querySelector(".products");
-    
+    let totalpricecontainer = document.querySelector (".basketTotal");
     // this block will only run if there are itemsInCart and the products container exist(only in the cart page)
     if(itemsInCart && productscontainer){
         productscontainer.innerHTML = "";//it will be empty first time page loads
+        
         Object.values(itemsInCart).map(item =>{
             productscontainer.innerHTML +=`
-            <div class="product">
+            <div class="product-title">
                 <ion-icon name="close-circle"></ion-icon>
-                <!--<img src="./images/${item.tag}.jpg">-->
                 <span>  Tesla ${item.name} </span> 
             </div>
             <div class="price">Kshs.${item.price}.00</div>
-            <div class= "quantity"> 
+            <div class="quantity"> 
             <ion-icon name="arrow-dropleft-circle"></ion-icon>
             <span>${item.incart} </span>
             <ion-icon name="arrow-dropright-circle"></ion-icon>
@@ -160,17 +160,8 @@ function displayItemsInCart(){
             </div>
             `
         });
-
-        productscontainer.innerHTML +=`
-        <div class = "basketTotalContainer">
-        <h4 class= "basketTotalTitle">
-        <span>Basket Total</span>
-        </h4>
-        <h4 class="basketTotal">
-        <span>Kshs. ${totalCartPrice}.00</span>
-        </h4>
-        `
     }
+    totalpricecontainer.innerHTML = `<span>Kshs. ${totalCartPrice}.00</span>`;
 
 }
 //runs when the page loads straight away
