@@ -164,6 +164,10 @@ function displayItemsInCart(){
     totalpricecontainer.innerHTML = `<span>Kshs. ${totalCartPrice}.00</span>`;
 
 }
+function removeItems(){
+    localStorage.clear();
+    location.reload();
+}
 //runs when the page loads straight away
 onLoadCartNumber(); 
 displayItemsInCart();
