@@ -15,17 +15,18 @@
 <body>
     <div class="container-fluid" style=" width: 50%;padding-bottom: 50px; background-color: rgb(236, 214, 255);"> <!--responsive container for the whole page-->
         <h2 ><u>Contact Us</u></h2>
-        <form action="" method="POST">
+        <form action="contactUs.php" method="POST">
             <label for="">Name</label> <br>
-            <input type="text" name="email"> <br>
+            <input type="text" name="name"> <br>
             <label for="">Email</label> <br>
             <input type="text" name="email"> <br>
             <label for="">Phone Number</label> <br>
             <input type="text" name="number" value=""> <br> <br>
-            <textarea name="contactUs" id="" cols="50" rows="20">
+            <textarea name="message" id="" cols="50" rows="20">
             </textarea> <br> <br>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <center><a href="landing.html">Home</a></center>
     </div>
 </body>
 </html>
