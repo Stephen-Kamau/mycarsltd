@@ -66,14 +66,45 @@
 				<h5 class="total">TOTAL</h5>
 			</div>
 			<div class="products">
-
+				
 			</div>
 			<div class="basketTotalContainer">
 				<div class="basketTotalTitle">Total :</div>
 				<div class="basketTotal"></div>
 			</div>
 			<div class="checkout">
-				<center><button>Checkout</button></center>
+				<center><button type="button" data-toggle="modal" data-target="#myModal">Checkout</button>
+				<button type="button" onclick="removeItems()">Clear</button></center>
+				<!-- The payment pop up -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">M-Pesa Payment</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							
+							<!-- Modal body -->
+							<div class="modal-body ">
+								<p>Go To M- Pesa </p>
+								<p>Select Lipa na M-Pesa</p>
+								<p>Select Pay Bill</p>
+								<p>Enter Business Number <i>345 766</i></p>
+								<p>Enter Account Number <i>PXI234</i></p>
+								<p>Enter Amount </p>
+								<p>Enter M-Pesa PIN and press OK</p>
+							</div>
+							
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
