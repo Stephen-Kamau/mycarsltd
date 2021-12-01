@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>User details</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="landing.css">
+<link rel="stylesheet" href="catalog.css">
 </head>
 <body>
 <div style="margin:auto; width:30%;">
@@ -24,12 +25,12 @@
 <input type="text" name= "username"> <br>
 <label for="">New Date of Birth: </label> <br>
 <input type="text" name= "password"> <br> <br>
-<label for="">Confirm Password: </label> <br>
+<label for="">Password: </label> <br>
 <input type="password" name= "password"> <br> <br>
 <button type="submit">Submit</button>
 <a href="catalog.html"><button type="button">Back</button></a>
 </form><br>
-<a href="catalog.html">Back</a>
+<a href="landing.html">Home</a>
 
 
 <?php
