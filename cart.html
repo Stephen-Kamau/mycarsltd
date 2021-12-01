@@ -99,7 +99,31 @@
 							
 							<!-- Modal footer -->
 							<div class="modal-footer">
-								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Close</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- The pop up after payment -->
+				<div class="modal" id="myModal2">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">M-Pesa Payment</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							
+							<!-- Modal body -->
+							<div class="modal-body ">
+								<p>Thank you for shopping with us. Check with us again for more exciting offers and deals!</p>
+							</div>
+							
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="removeItems()">Close</button>
 							</div>
 							
 						</div>
