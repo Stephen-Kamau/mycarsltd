@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>User details</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="landing.css">
+<link rel="stylesheet" href="catalog.css">
 </head>
 <body>
 <div style="margin:auto; width:30%;">
@@ -74,7 +76,7 @@ function sanitize($data){
 }
 ?>
 <p> </p>
-<p>Click <a href="updatedetails.php">here</a> to update your details</p>
+<p>Click <a href="update_details.php">here</a> to update your details</p>
 </div>
 </body>
 </html>
