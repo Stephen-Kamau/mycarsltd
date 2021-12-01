@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){ //checking whether the method is post b
 
     $result = mysqli_query($connect,$query);
     if($result){
-        echo "Thank you for your feedback <br>";
+        echo "Thank you for contacting mycarsltd. Our support team will get back to you as soon as possible <br>";
         echo "<a href='landing.html'>Home</a>";
     }else{
         echo "".mysqli_error($connect);
